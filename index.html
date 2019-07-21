@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Home Page</title>
+<link href="assets/css/main.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+    
+* {
+  box-sizing: border-box;
+}
+
+// basic header styles
+header {
+  box-shadow: 0px 5px 5px #999999;
+  height: 100px;
+  position: relative;
+}
+
+// nav styles
+.mobile-nav-wrap {
+  @media (min-width: 768px) {
+    /* display: none; */
+  }
+}
+
+// styling of dropdown menu
+.mobile-header-nav {
+  background-color: #222222;
+  display: none; // hide until menu is clicked
+  list-style: none;  // replace with %styled-list
+  margin: 0; // replace with %styled-list
+  padding: 0; // replace with %styled-list
+  position: absolute;
+  top: 100px; // if nav sliding in below header
+  width: 100%;
+  
+  li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    a {
+      color: white;
+      display: block;
+      padding: 15px 0;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      
+      &:hover {
+        background-color: lighten(#222222, 5%);
+      }
+    }
+  }
+}
+
+
+// styling of hamburger menu
+.hamburger-menu {
+  display: inline-block;
+  height: 100px;
+  padding: 35px 25px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .menu-item {
+    background: black;
+    display: block;
+    height: 3px;
+    margin: 0 0 10px;
+    transition: all 0.3s ease-in-out;
+    width: 40px;
+  }
+    
+  &.open {
+
+    .menu-item {
+      margin: 0 0 5px;
+
+      &:first-child {
+        transform: rotate(45deg);
+        transform-origin: 10px;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: 8px;
+      }
+    }
+  }
+}
+
+
+</style>
+</head>
+<body>
+<header>
+    <!-- <button class="burger_menu">&#9776;</button> -->
+    <nav class="mobile-nav-wrap" role="navigation">
+        <ul class="mobile-header-nav">
+            <li><a href="index.html"  class="active">Home</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        
+        <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+        <span class="menu-item"></span>
+        <span class="menu-item"></span>
+        <span class="menu-item"></span>
+        </a>
+    <ul class="nav_main">
+        <li><a href="index.html"><img src="assets/img/logo.png" alt="logo"></a></li>
+        <li><a href="index.html"  class="active">Home</a></li>
+        <li><a href="">People</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <h1 class="logo"><img src="assets/img/logo.png" alt="logo"></h1>
+</header>
+<main>
+    <div class="container">
+            <ul id="slides">
+              <li class="slide showing"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+            </ul>
+            <h2 class="slider_head">WALIBI</h2>
+            <div class="buttons">
+              <button class="controls" id="previous">&lt;</button>
+              <button class="controls view_case">View case</button>
+              <button class="controls" id="pause"></button>
+              <button class="controls" id="next">&gt;</button>
+            </div>
+            <div class="down_arrow"><img src="assets/img/down_arrow.png" alt=""></div>
+            <div class="scroll-downs">
+            </div>
+          </div>
+    <section class="team">
+        <h2>WE ARE TAM TAM</h2>
+        <p>Tam Tam is a full service digital agency focusing on Dutch Digital Service Design. We combine strategy. design, technology and interaction to make the digital interactions between company and customer valuable and memorable. We work for awesome brands with a team of 120 digitals from our office in Amsterdam. Making great work and having a blast doing it That's what we believe in. </p>
+    </section>
+    <section class="intagram_feed bg" id="follow">
+        <h2>FOLLOW US ON INSTAGRAM </h2>
+        <span>@tamtamni</span>
+        <ul class="feed_content">
+            <li>
+                <figure>
+                    <img src="assets/img/Feed/1.jpg" alt="">
+                </figure>
+                <p>Last Thursday emerce organised their own ADE and we were part of it! Where are you gonna party tonight? #ADE#tbt#enight#tamtam</p>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/img/Feed/2.jpg" alt="">
+                </figure>
+                <p>We're feeling happier and happier thanks to there nice dutch flowers we received from Florensis! #holland #flowers #doordebloemenofficenietmeerzien #settingthebloemetjesoutside</p>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/img/Feed/3.jpg" alt="">
+                </figure>
+                <p>We are VERY VERY happy with our Silver Lovie Award and People's Lovies Winner for the Docters without borders website! #lovies #tamtamhome #proud #celebration</p>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/img/Feed/4.jpg" alt="">
+                </figure>
+                <p>Thanks @radio538 and @maxpinas for bringing us friday beats with our brand new #marshall speakers! #friyay #gift #speaker #tamtamhome </p>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/img/Feed/5.jpg" alt="">
+                </figure>
+                <p>Friyay! Coffee anyone? #almostweekend #tamtamhome #koffiemax #latteart </p>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/img/Feed/6.jpg" alt="">
+                </figure>
+                <p>TamTam Talks Search Edition! First edition with our new colleagues from Expand Online &#128076; &#128170; #tamtamhome #tttalks #breakfast #search 
+                </p>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <ul>
+        <li><a href=""><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+        <li><a href=""><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+        <li><a href=""><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
+    </ul>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+<script>
+    $('.js-toggle-menu').click(function(e){
+  e.preventDefault();
+  $('.mobile-header-nav').slideToggle();
+  $(this).toggleClass('open');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Home Page</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div  class="bg">
+<header>
+        <!-- <button class="burger_menu">&#9776;</button> -->
+        <nav class="mobile-nav-wrap" role="navigation">
+            <ul class="mobile-header-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+            
+            <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+            <span class="menu-item"></span>
+            <span class="menu-item"></span>
+            <span class="menu-item"></span>
+            </a>
+        <ul class="nav_main">
+            <li><a href="index.html"><img src="assets/img/logo.png" alt="logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">People</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <h1 class="logo"><img src="assets/img/logo.png" alt="logo"></h1>
+</header>
+<main>
+    <section class="contact">
+        <h2>WE WOULD LOVE TO <br>HEAR FROM YOU</h2>
+        <span class="error_form" id="success_message"></span>
+        <form id="registration_form" class="form_content">
+            <div class="overlay">
+                <table>
+                    <tr>
+                        
+                        <td><input type="text" placeholder="First name" id="form_fname"><span class="error_form_fname" id="fname_error_message"></span></td>
+                        <td><input type="text" placeholder="Last name" id="form_lname"><span class="error_form_lname" id="lname_error_message"></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" placeholder="Your e-mail address" id="form_email"><span class="error_form_email" id="email_error_message"></span></td>
+                        <td><input type="tel" placeholder="Your phone number (optional)" id="form_phone"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea placeholder="Your message..." id="form_txtarea"></textarea><span class="error_form_txtarea" id="txtarea_error_message"></span></td>
+                    </tr>
+                </table>
+            </div>
+            <input type="submit" value="Send" id="submit" >
+        </form>
+        
+    </section>
+</main>
+</div>
+<footer>
+    <ul>
+        <li><a href=""><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+        <li><a href=""><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+        <li><a href=""><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
+    </ul>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="assets/js/validator.js"></script>
+<script>
+    $('.js-toggle-menu').click(function(e){
+  e.preventDefault();
+  $('.mobile-header-nav').slideToggle();
+  $(this).toggleClass('open');
+});
+</script>
+</body>
+</html>
