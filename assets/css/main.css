@@ -43,7 +43,7 @@ header {
     transition: all 0.3s ease-in-out;
   }
   .mobile-header-nav li a:hover {
-    background-color: #2f2f2f;
+    color: #ff5454;
   }
   .hamburger-menu {
     display: inline-block;
