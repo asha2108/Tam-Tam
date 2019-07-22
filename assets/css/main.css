@@ -333,11 +333,13 @@ footer ul {
 }
 #success_message {
     background: rgba(85,93,96,0.3);
-    padding: 20px;
+    padding: 18px;
     display: block;
     color: #fff;
     font-size: 20px;
     text-align: center;
+    width: 78vw;
+    margin: 0 auto;
 }
 .fa-exclamation-circle, .fa-check-circle {
     margin-right: 10px;
