@@ -113,7 +113,7 @@ $(document).ready(function () {
         }
 
         if(submit){
-            $("#registration_form").hide();
+            $("#registration_form").css("visibility", "hidden");
             $("#success_message").show();
             $("#success_message").html("<span class=\"fa fa-check-circle\"></span>Thank you, we have received your message.");
             $('#submit').submit();
