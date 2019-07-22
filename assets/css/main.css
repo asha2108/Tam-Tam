@@ -122,19 +122,16 @@ header {
   
   background-size: cover;
 }
-.slide:nth-of-type(1){
-	background-color: red;
+.slide:nth-of-type(1) {
   background-image: url('../img/Slider/Florensis.jpg');
 }
-.slide:nth-of-type(2){
-	background-color: orange;
+.slide:nth-of-type(2 ){
   background-image: url('../img/Slider/Oxxio.png');
 }
-.slide:nth-of-type(3){
-	background-color: green;
+.slide:nth-of-type(3) {
   background-image: url('../img/Slider/Walibi.jpg');
 }
-.controls{
+.controls {
     background: #000;
     color: #fff;
     border: none;
