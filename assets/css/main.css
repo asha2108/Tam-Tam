@@ -338,8 +338,6 @@ footer ul {
     color: #fff;
     font-size: 20px;
     text-align: center;
-    width: 78vw;
-    margin: 0 auto;
 }
 .fa-exclamation-circle, .fa-check-circle {
     margin-right: 10px;
@@ -555,6 +553,10 @@ footer ul {
     }
     #submit {
         margin-top: 40px;
+    }
+    #success_message {
+        width: 78vw;
+        margin: 0 auto;
     }
     .error_form_fname {
         width: 38vw;
