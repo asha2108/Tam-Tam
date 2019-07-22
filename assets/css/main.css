@@ -336,7 +336,6 @@ footer ul {
     background: rgba(85,93,96,0.3);
     padding: 20px;
     display: block;
-    height: 60px;
     color: #fff;
     font-size: 20px;
     text-align: center;
@@ -547,9 +546,6 @@ footer ul {
         width: 78vw;
         height: 120px;
     }
-    #success_message {
-        height: 30px;
-    }
     .overlay {
         background-color: rgba(255,255,255,0.2);
         padding: 20px 10px;
@@ -679,7 +675,6 @@ footer ul {
     }
     #success_message {
         width: 600px;
-        height: auto;
         margin: 0 auto;
         text-align: left;
     }
