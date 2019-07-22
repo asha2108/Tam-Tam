@@ -1,6 +1,7 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    outline: none;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -35,7 +36,7 @@ header {
     border-top: 3px solid #fff;
   }
   .mobile-header-nav li a {
-    color: white;
+    color: #fff;
     display: block;
     padding: 15px 0;
     text-align: center;
