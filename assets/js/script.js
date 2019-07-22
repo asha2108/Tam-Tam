@@ -1,6 +1,3 @@
-
-
-
 var controls = document.querySelectorAll('.controls');
 for(var i=0; i<controls.length; i++){
 	controls[i].style.display = 'inline-block';
